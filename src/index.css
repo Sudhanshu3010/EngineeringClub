@@ -1,13 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.navbar a{
+  color: #667085 !important;
+  font-size: 1rem ;
+  font-weight: 600;
+}
+.navbar a:hover{
+  color: #0284C7 !important;
+}
+.navbar-brand img{
+  mix-blend-mode: multiply !important;
+}
+.navbar-brand img.active{
+  border-bottom: none !important;
+}
+
+.navbar .active{
+  color: #0284C7 !important;
+  border-bottom: 1px solid #0284C7;
+}
+
+.nav-right .btn1{
+  color: #667085;
+  font-weight: 600;
+}
+.menu_active{
+  font-weight: bold;
+  border-bottom: 1px solid #0284C7 !important;
+}
+.nav-right .btn2{
+  background-color: #0284C7 !important ;
+}
+.navbar .dropdown-menu .dropdown-item{
+  background-color: white !important;
+  color: #667085;
+}
+.navbar .btn1 a, .btn2 a{
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px;
+}
+
+.btn2 a:hover{
+  color: red;
+}
+.nav-right .btn{
+  border: none !important;
+}
+.btn2 a{
+  color: white !important;
+}
+.btn2 a:hover{
+  color: white !important;
+}
+.btn2 a.active{
+  color: white !important;
 }

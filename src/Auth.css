@@ -1,0 +1,55 @@
+@import "media-query.css"; 
+.login-form{
+
+}
+.login-form p{
+    font-size: 1rem;
+    color: #64748b;
+}
+.blue-text{
+    color: #0284C7;
+    text-decoration: none;
+    font-weight: 600;
+}
+.bg-bluebtn2{
+    background-color: #0284C7 !important;
+    color: var(--White, #FFF);
+    width: 30%;
+  }
+#password{
+    margin-bottom: 0px;
+}
+.pass-caption{
+  
+}
+.sign-in-options{
+    text-align: center;
+    margin-top: 4vh;
+    
+}
+.sign-in-options p{
+    font-weight: 500;
+    font-size: 14px !important;
+}
+.login-form form input {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid var(--gray-300, #D0D5DD);
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    padding: 10px 14px;
+    margin: 5px 0px 5px 0px;
+}
+.login-form .bg-white {
+    background: url('./Images/Featured_Icons/google-logo.png') 0 0 no-repeat;
+    background-position: 18%;
+}
+
+  @media only screen and (max-width: 768px) {
+    .auth-img{
+        display: none;
+    }
+    .login-form{
+        padding-inline: 50px;
+        padding-top: 50px;
+    }
+  }

@@ -1,0 +1,186 @@
+@media only screen and (max-width: 768px) {
+    .conttainer-fluid{
+        padding: 0px !important;
+    }
+    .nav_bg{
+        background-color: #f6f6f6;
+        width: 100%;
+        background-image: url(../src/Images/Background\ pattern.png) !important;
+        background-position-x: -3px !important;
+
+      }
+    .txtr-1{
+      text-align: start;
+      padding-top: 0px !important;
+    }
+    .txtr{
+        text-align: start;
+    }
+    .nts{
+        padding: 0px;
+    }
+    .mobile-hide{
+        display: none;
+    }
+    .exp-3{
+        width: 100% !important;
+        padding: 12px !important;
+        font-size: 0.8rem !important;
+    }
+    .inp-1 , .inp-2{
+        margin-bottom:12px ;
+        padding: 12px !important;
+        font-size: 0.8rem !important;
+    }
+    .searchbox{
+        margin-top: 20px !important;
+        background-color: transparent !important;
+        padding: 0px !important;
+    }
+    .rating-1{
+        margin-top: 20px !important;
+    }
+
+    .carousel-control-next, .carousel-control-prev {
+        bottom: 0px !important;
+        margin-inline: 2vw !important ;
+    }
+    .carousel-control-next-icon, .carousel-control-prev-icon {
+        width: 70% !important;
+
+    }
+    .copyright-text{
+        padding-left: 20px !important;
+        margin-bottom: 25px;
+    }
+    .copyright-text p{
+        margin-bottom: 5px !important;
+        padding-left: 10px;
+
+    }
+    .tc{
+        
+        order: -1 !important;
+    }
+    .newsletter{
+        padding-inline:30px !important;
+    }
+    .main-activity h1{
+        font-size: 1.8rem !important;
+    }
+    
+    .test-heading h1{
+        font-size: 1.8rem !important;
+        padding-inline: 10px;
+    }
+
+    .num-card{
+        border: 0px !important;
+    }
+    .get-started{
+        flex-direction: column;
+        background-color: #efefef !important;
+        padding: 25px !important;
+    }
+    .get-started h2{
+        color: black !important;
+    }
+    .get-started button{
+        margin-block: 10px;
+        margin-right: 0px !important;
+    }
+    
+    .act-cards{
+        padding-inline: 12px !important;
+    }
+    .act-btn button{
+        padding: 7px 10px !important;
+    }
+     /*-----My Bookings-----*/
+    .heading-col{
+        display: block !important;
+    }
+    .heading-col .bg-bluebtn{
+        width: 100%;
+        padding: 0px 10px;
+        margin-top: 5px;
+    }
+
+    /*-----Login Signup-----*/
+    .login-form .bg-white {
+        background-position: 12%;
+        font-size: 15px;
+    }
+    .login-form{
+        padding-inline: 40px !important;
+    }
+    .booking-text{
+        padding-left: 20px !important;
+      }
+    .act-card .card-body .card-text img {
+  
+        margin-right: 2px !important;
+        margin-left: 10px !important; 
+      }
+
+    .foot-img{
+        display: none;
+    }
+    .footer-div{
+        background: var(--gray-50, #F9FAFB);
+        padding-top: 10px;
+    }
+     /*-----Add Activity-----*/
+     .addActivity{
+        padding-inline:25px !important ;
+     }
+      /*-----Sale Section-----*/
+      .sale-section, .timings{
+        margin: 30px;
+      }
+    .display-data{
+        padding: 20px !important;
+    }
+    /* ---------Product page------------ */
+    .productMain{
+        padding-inline: 20px;
+    }
+    .blue-bullets li::before {
+    top: 20% !important; /* Position the bullet vertically */
+    }
+    .react-player{
+        width: 100% !important;
+        height: 200px !important;
+      }
+
+}
+
+
+
+
+@media only screen and (max-width: 350px) {
+    .act-btn button{
+        padding: 5px 7px !important;
+        
+    }
+    .act-card .card-body .card-text {
+        font-size: 25px !important ;
+      }
+   
+
+    .login-form .bg-white {
+        background-position: 10% !important;
+        font-size: 14px;
+    }
+    .login-form{
+        padding-inline: 35px !important;
+    }
+
+}
+@media only screen and (max-width: 300px) {
+    .act-card .card-body .card-text img:nth-child(3) {
+        margin-left: 0px !important; 
+        margin-top: 4px;
+      }
+}
+

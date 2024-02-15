@@ -1,38 +1,928 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import "media-query.css";
+
+* {
+  font-family: 'Inter', sans-serif;
+}
+
+.nav_bg {
+  background-color: #f6f6f6;
+  width: 100%;
+  background-image: url(../src/Images/Group\ 10.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: 25vh;
+}
+
+.bg-nav {
+  background-color: #f6f6f6;
+}
+
+.nav_bg2 {
+  background: rgba(224, 242, 254, 0.40);
+  padding-bottom: 50px;
+}
+
+.navbar-toggler {
+  border: 0px;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.userBox {
+  display: flex;
+  width: 232px;
+  height: 54px;
+  flex-shrink: 0;
+  border-radius: 54px;
+  border: 1px solid #EAEAEA;
+}
+.user-drop-down .user-options{
+  margin-left: 10px;
+  margin-top: 5px;
+
+}
+.userBox {
+  padding: 5px;
+}
+.userBox .d-block{
+  margin: 5px 0px 0px 10px;
+}
+.userBox h4 {
+  margin: 0px 10px 0px 0px;
+  color: #2E2E2E;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 600;
+
+}
+.userBox p{
+  color: var(--sky-60, #0284C7);
+  font-size: 12px;
+  font-weight: 400;
+  
+}
+
+@media only screen and (min-width: 768px) {
+  .exp-form {
+    display: flex;
+  }
+}
+
+/*-----HomeHead Css ----*/
+.main-h h1 {
+  color: #101828;
+  font-weight: 600;
+
+  font-size: 3.2rem !important;
+}
+
+
+.main-h p {
+  color: #667085;
+}
+
+.main-p p {
+  color: #667085;
+}
+
+.searchbox {
+  border-radius: 10px;
+  padding: 5px 10px 5px 10px;
+  background-color: #ffffff;
+  margin-top: 30px;
+
+}
+
+.form-control {
+  padding: 10px 10px 10px 10px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--dark-700, #8a9ab1);
+
+}
+
+.txtr-1 {
+  padding-top: 100px;
+}
+
+.txtr-2 {
+  color: var(--sky-800, #075985) !important;
+
+}
+
+.exp-3 {
+  width: 70%;
+  color: white;
+  font-weight: 800;
+  background-color: #0284C7;
+}
+
+.rating-1 {
+  margin-top: 50px;
+}
+
+.rating-1 h2 {
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.rating-1 p {
+  font-size: 0.8rem;
+  color: var(--gray-900, #18181B);
+  padding-bottom: 5px !important;
+}
+
+.rating-1 h5 {
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+
+.main-activity h1 {
+  color: #101828;
+  font-weight: 600;
+
+  font-size: 2.2rem;
+}
+
+.main-activity p {
+  color: #64748B;
+  margin-bottom: 10px;
+
+}
+
+/*-----Card Css ----*/
+.card {
+  border: 0px;
+}
+
+.card-img,
+.card-img-bottom,
+.card-img-top {
+  width: 60px;
+  margin: auto;
+}
+
+.card-body {
+  padding-inline: 0px !important;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.card-text {
+  font-size: 1rem !important;
+  padding-inline: 2px;
+  color: var(--gray-700, #3F3F46);
+
+}
+
+/*-----Testimonial Css ----*/
+.accordion {
+  --bs-accordion-btn-active-icon: url(../src/Images/Featured_Icons/minus-circle.png);
+  --bs-accordion-btn-icon: url(../src/Images/Featured_Icons/plus-circle.png);
+
+}
+
+.carousel-control-next-icon {
+  background-image: url(./Images/Featured_Icons/Icon-next-carousel.png);
+  background-size: contain;
+  width: 25%;
+
+}
+
+.carousel-control-prev-icon {
+  background-image: url(./Images/Featured_Icons/Icon-prev-carousel.png);
+  background-size: contain;
+  width: 25%;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  top: unset;
+  bottom: 90px;
+  margin-inline: 18vw;
+}
+
+.carousel-control-next {
+  justify-content: end;
+}
+
+.carousel-control-prev {
+  justify-content: start;
+}
+
+.test-bg {
+  background-color: #f6f6f6;
+}
+
+.test-heading {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.test-heading h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.avt {
   display: flex;
   flex-direction: column;
+  margin: auto;
+
+}
+
+.avt h4 {
+  text-align: center;
+  margin-bottom: 0px;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.avt p {
+  text-align: center;
+  color: #667085;
+  font-size: 1rem;
+  margin-bottom: 50px;
+}
+
+.avt img {
+  width: 70px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/*-----Accordian Css ----*/
+.accordion-button {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.accordion-button:not(.collapsed) {
+  color: black;
+  background-color: white;
+  box-shadow: none;
+}
+
+.accordion-button:focus {
+  border: none;
+  box-shadow: none;
+}
+
+.accordion-body {
+  font-size: 0.9rem;
+  color: #667085;
+  padding-top: 0px;
+}
+
+/*-----FAQ Css ----*/
+.num-img {
+  width: 60px;
+  height: 60px;
+}
+
+/*-----Numbers Css ----*/
+.num-card {
+  flex-direction: column;
+  padding-bottom: 18px;
+  text-align: center;
+}
+
+.num-card h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #0284C7;
+}
+
+.num-card p {
+  color: #101828;
+  font-weight: 600;
+}
+
+.get-started {
+  background-color: #E0F2FE;
+  display: flex;
+  padding: 42px 50px 42px 50px;
+  border-radius: 10px;
+}
+
+.margin-100 {
+  margin: 100px;
+}
+
+.get-started h2 {
+  color: var(--sky-60, #0284C7);
+  font-size: 1.6rem;
+  font-weight: 600;
+  flex-grow: 8;
+}
+
+.get-started button {
+  background-color: var(--White, #FFF);
+  border: 1px solid var(--sky-60, #b1b1b1);
+  align-items: flex-end;
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 8px;
+  margin-inline-end: 14px;
+  height: 70%;
+  font-weight: 600;
+
+}
+
+.banner-p p {
+  padding-top: 10px;
+  color: #1a1a1a;
+  font: 1rem sans-serif;
+  margin-bottom: 0px;
+}
+
+.bg-bluebtn {
+  background-color: #0284C7 !important;
+  color: var(--White, #FFF);
+  border: none;
+
+}
+
+.bg-wbbtn {
+  background-color: white;
+  color: #0284C7;
+  border: 1px solid var(--sky-60, #0284C7);
+
+}
+
+.bg-bkbtn {
+  background-color: white;
+  border: 1px solid #E5E7EB;
+}
+
+/*-----Footer Css ----*/
+.footer-div {
+  margin-top: 80px;
+
+
+}
+
+.g-line {
+  margin-top: 30px;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.copyright-text {
+  color: rgb(136, 144, 158);
+  font-size: 0.85rem;
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.copyright-text p {
+  margin-bottom: 20px;
+}
+
+.tc a {
+  color: rgb(136, 144, 158);
+  font-size: 0.85rem;
+  text-decoration: none;
+  padding-left: 10px;
+}
+
+.newsletter p {
+  font-size: 14px;
+  font-weight: 600;
+
+}
+
+.newsletter input,
+.newsletter button {
+  width: 100%;
+  border-radius: 8px;
+  padding: 10px 14px;
+  border: 1px solid var(--gray-300, #D0D5DD);
+  font-weight: 600;
+  font-size: 14px;
+
+}
+
+.footer-list li {
+  display: inline-flex;
+  margin-right: 20px;
+
+}
+
+/*-----Activities Css ----*/
+/*-----Actcard Css ----*/
+.filter {
+  border-radius: 6px;
+
+}
+
+.act-cards {
+  padding-inline: 150px;
+
+}
+
+.act-card {
+  margin-inline: auto;
+  padding: 3px 4px 10px;
+  border-radius: 10px;
+  border: 7px solid white;
+  box-shadow: 0px 4px 36px 0px rgba(0, 0, 0, 0.17);
+
+}
+
+.act-img {
+  border-radius: 10px;
+  margin-bottom: 12px;
+  width: 100% !important;
+}
+
+.act-card .card-body {
+  padding-bottom: 0px;
+  margin-left: 5px;
+}
+
+.act-card .card-body .card-title {
+  color: #334155;
+  font-size: 15px;
+}
+
+.act-card .card-body .card-text,
+.productCard .card-text {
+  color: #64748B;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  margin-bottom: 12px;
+}
+
+.act-card .card-body .card-text img {
+
+  margin-right: 7px;
+  margin-left: 15px;
+}
+
+.act-card .card-body .card-text img:first-child {
+  margin-left: 0px !important;
+}
+
+.act-btn {
+  margin-top: 15px;
+}
+
+.act-btn button,
+.addActivity button,
+.display-data button {
+  padding: 7px 15px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-radius: 7px;
+  border: 1px solid rgb(198, 198, 198);
+  margin-right: 5px;
+  font-size: 14px;
+  font-weight: 500;
+
 }
 
-.App-link {
-  color: #61dafb;
+.act-btn button:first-child {
+  background: var(--sky-60, #0284C7);
+  color: var(--White, #FFF);
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.act-btn img {
+  margin-left: auto;
+  margin-right: 10px;
+
+}
+
+.act-cards {
+  background-image: url(./Images/Bg-line-pattern.png);
+}
+
+.heading-col {
+  justify-content: space-between;
+}
+
+.heading-col button {
+  padding: 2px 12px;
+  font-weight: 600;
+  border-radius: 7px;
+  border: 1px solid var(--sky-60, #0284C7);
+  background: var(--sky-60, #0284C7);
+  height: 45px;
+}
+
+/*---------Sale Section ---------*/
+.sale-section {
+  border: 1px solid #DADBDD;
+  border-top: 4px solid var(--sky-60, #0284C7);
+  padding: 15px 15px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+/*---------Timing/Calendar Section ---------*/
+.timings {
+  margin-top: 20px;
+  border: 1px solid #DADBDD;
+  padding: 15px 15px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.timings p {
+  font-size: 14px;
+  margin: 0px;
+  color: var(--gray-500, #6B7280);
+}
+
+.calendar-div {
+  border-radius: 6px;
+  box-shadow: 0px 25px 25px 0px rgba(0, 0, 0, 0.15);
+
+}
+
+.btn-br6 {
+  border-radius: 6px;
+
+}
+
+.calendar-div .btn-section {
+  justify-content: flex-end;
+}
+
+.calendar-div .btn-section button {
+  padding: 5px 10px;
+
+}
+
+.calendar-box {
+  margin-inline: auto;
+  border-radius: 6px;
+  border: 1px solid #dadbdd !important;
+}
+
+.react-calendar__tile--now {
+  background: var(--sky-100, #E0F2FE) !important;
+  color: rgb(220, 220, 220)969;
+
+  border-radius: 999px;
+
+}
+
+.react-calendar__month-view__days__day--weekend {
+  color: black !important;
+
+}
+
+.react-calendar__month-view__days__day--weekend:active {
+  color: white !important;
+}
+
+.react-calendar__tile--active:enabled:hover,
+.react-calendar__tile--active:enabled:focus {
+  background: #0284C7 !important;
+  color: #fff;
+  border-radius: 100px;
+}
+
+.react-calendar__tile:hover {
+  background-color: var(--sky-100, #E0F2FE) !important;
+  /* Change to your desired hover color */
+  cursor: pointer;
+  border-radius: 999px;
+
+}
+
+
+/*---------Time/Calendar  END ---------*/
+.sale-section .gradient-div {
+  padding: 15px 18px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  background: linear-gradient(90deg, #EEFBFF 0%, #60BBEE 100%, #9CDBFF 100%);
+}
+
+.gradient-div img {
+  margin-top: 10px;
+  height: 50px;
+
+}
+
+.gradient-div h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0px;
+  color: #334155;
+}
+
+.gradient-div p {
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 0px;
+  color: #334155;
+}
+
+.sale-section ul li {
+  color: #334155;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+/*-------------Booking cards--------*/
+.booking-card {
+  border-radius: 16px;
+  padding: 20px;
+  border: 1px solid #cacaca;
+  box-shadow: 0px 2px 25px 2px rgba(0, 0, 0, 0.10);
+}
+
+.booking-card .bookcard-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.booking-text {
+  padding-top: 10px;
+}
+
+.booking-text p {
+  margin-bottom: 10px;
+  color: #64748b;
+}
+
+.booking-text .card-text {
+  font-family: 'Roboto', sans-serif;
+  color: #333333;
+}
+
+.booking-text .description {
+  font-size: 0.9rem;
+}
+
+.booking-card button {
+  background-color: rgb(255, 255, 255);
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--sky-300, #7DD3FC);
+  margin-right: 10px;
+  font-weight: 600;
+  color: var(--sky-60, #0284C7);
+
+}
+
+
+/*-------------Add Activity Css--------*/
+.addActivity {
+  padding-inline: 100px;
+}
+
+.addActivity h1 {
+  color: #101828;
+  font-weight: 600;
+  font-size: 2.2rem;
+
+}
+
+.addActivity h3 {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.addActivity p {
+  color: var(--gray-600, #475467);
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.addActivity hr,
+.Reviews hr,
+.grey-hr {
+  color: #a3a3a3;
+  padding-bottom: 10px;
+
+}
+
+.addActivity h4 {
+  color: var(--gray-700, #344054);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.addActivity input,
+.addActivity textarea,
+.addActivity select,
+.addActivity .drag-area {
+  width: 100%;
+  border-radius: 8px;
+  padding: 8px 10px;
+
+  border: 1px solid var(--gray-300, #D0D5DD);
+  background: var(--base-white, #FFF);
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+
+  color: var(--gray-900, #101828);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.drag-area {
+  text-align: center;
+  cursor: pointer;
+  padding: 20px 30px;
+  font-size: 12px !important;
+  user-select: none;
+  -webkit-user-select: none;
+
+}
+
+.drag-area span {
+  font-size: 15px;
+  font-weight: 700;
+  color: #0284C7;
+
+
+}
+
+.img-container {
+
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  overflow-y: auto;
+  margin-top: 10px;
+}
+
+.Media-Drop {
+  padding: 30px;
+}
+
+.img-container .image {
+  width: 200px;
+  margin-right: 5px;
+  height: 150px;
+  position: relative;
+  margin-bottom: 10px;
+
+}
+
+.d-none {
+  display: none;
+}
+
+.img-container .image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+}
+
+.drag-area span:hover {
+  color: var(--dark-800, #334155);
+
+}
+
+.img-container .image span {
+  position: absolute;
+  top: -2px;
+  right: 9px;
+  font-size: 20px;
+  cursor: pointer
+}
+
+.delete {
+  z-index: 999;
+  color: #0284C7;
+}
+
+.display-data {
+  color: #101828;
+  padding-inline: 100px;
+}
+
+.display-data p {
+  font-size: 15px;
+  color: #101828;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+/* ----Add Activity / Display Page Ends------ */
+/*---------Product Page ---------*/
+/* .react-player{
+  width: 100% !important;
+  height: 60vh !important;
+} */
+.productCard h4 {
+  color: var(--dark-800, #334155);
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.productCard button {
+  padding: 7px 14px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.productMain .d-flex p {
+  color: var(--dark-800, #334155);
+  font-size: 13px;
+  font-weight: 400;
+  padding-top: 5px;
+  margin-bottom: 5px;
+  padding-left: 8px;
+}
+
+.productDisc h2,
+.faq h2 {
+  color: #222325;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  font-size: 1.7rem;
+  font-weight: 700;
+  line-height: 36px;
+  /* 128.571% */
+}
+
+.productDisc ul {
+  list-style: none;
+  color: #404145;
+  font-size: 14px;
+  font-weight: 400;
+  padding-left: 0px;
+}
+
+.productDisc ul li {
+  margin: 10px 0px
+}
+
+.productDisc ul li img {
+  margin-right: 10px;
+}
+
+.blue-bullets {
+  margin-left: 30px;
+
+}
+
+.blue-bullets li::before {
+  position: absolute;
+  content: "•";
+  /* Use a custom bullet character */
+  color: #0284C7;
+  /* Change the color of the bullet */
+  display: inline-block;
+  width: 1em;
+  /* Set width for spacing */
+  margin-left: -1em;
+  /* Negative margin for alignment */
+  font-size: 2rem;
+  top: 40%;
+  /* Position the bullet vertically */
+  transform: translateY(-50%);
+  /* Adjust alignment */
+}
+
+.blue-bullets li {
+  font-size: 16px;
+  margin-top: 10px !important;
+  line-height: 25px;
+  position: relative;
+}
+
+
+.Reviews p {
+  margin-bottom: 10px;
+  display: flex;
+  color: var(--dark-800, #334155);
+  font-size: 14px;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.Reviews button {
+  padding: 5px 15px;
+  border-radius: 6px;
+}
+
+.faq p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.faq .fw-700 {
+  margin-top: 30px;
 }
